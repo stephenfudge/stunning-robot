@@ -22,13 +22,15 @@
     <header class="bg-primary text-white py-2">
         <h1>Weather Dashboard </h1>
     </header>
+    <!-- main section -->
     <main class="container" id="">
         <div class="row">
+
             <!-- search section -->
             <div class="column1">
                 <div id="search">
                     <h3>Search for a City:</h3>
-                    <form id="">
+                    <form id="cityForm">
                         <input class="cityInput" id="city" name="city" type="text" placeholder="Las Vegas">
                         <button type="submit" id="submitButton" class="btn btn-info">Search</button>
                     </form>
@@ -45,6 +47,9 @@
 
             <div class="column2">
                 <div id="showWeather">
+                    <!-- today -->
+                    <div id="currentWeather"></div>
+                    <!-- five day forecast -->
                     <div id="fiveDay">
                         <ul id="fiveDayList">
                         </ul>
