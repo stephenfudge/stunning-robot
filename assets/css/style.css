@@ -1,6 +1,48 @@
+/* Variables */
+
+
+/* Universal Selector */
 * {}
 
 
-body {}
+/* Element Selector */
+body {
+    font-family: 'Merriweather', serif;
+}
 
-.btn {}
+header {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.container {
+    margin-top: 10px;
+}
+
+.column1 {
+    width: 20%;
+}
+
+.column2 {
+    width: 70%;
+}
+
+.btn {
+    margin-top: 4px;
+    width: 100%;
+}
+
+
+
+/* ID Selectors */
+
+
+/* Search Section */
+#city {
+    width: 100%;
+}
+
+
+/* Weather Display Section */
