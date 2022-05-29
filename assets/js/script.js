@@ -4,7 +4,7 @@
 //  the temperature, the humidity, the wind speed, and the UV index (color coded favorable(green) moderate(yellow) severe(red))
 // 
 
-
+// variables
 var cityInput = document.getElementById("cityInput");
 var cityForm = document.getElementById("cityForm");
 var submitButton = document.getElementById("submitButton");
@@ -17,11 +17,10 @@ var fiveDayForecast = document.getElementById("fiveDay")
 var APIkey = "0d79bd3ff7e85c4b19f6f08702035eed";
 
 // do i want to do 'city' or 'cities'? 
-var city; //var cities = []
-
-
+// var city; var cities = [];
 
 //submit button
 submitButton.on("submit", function () {
-
+    cityInputOut = cityInput.value.trim();
+    getCityData(cityInputOut);
 })

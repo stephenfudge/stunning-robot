@@ -13,26 +13,12 @@ body {
 header {
     font-family: 'Playfair Display', serif;
     text-align: center;
+    background-color: blueviolet;
+    color: white;
 }
 
 /* Class Selectors */
 
-.container {
-    margin-top: 10px;
-}
-
-.column1 {
-    width: 20%;
-}
-
-.column2 {
-    width: 70%;
-}
-
-.btn {
-    margin-top: 4px;
-    width: 100%;
-}
 
 
 
@@ -40,9 +26,7 @@ header {
 
 
 /* Search Section */
-#city {
-    width: 100%;
-}
+
 
 
 /* Weather Display Section */

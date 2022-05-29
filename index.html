@@ -3,73 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Fonts, -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Weather</title>
+    <title>Weather Dashboard</title>
 </head>
 
-
 <body>
-    <!-- header -->
-    <header class="bg-primary text-white py-2">
-        <h1>Weather Dashboard </h1>
+    <!--- header -->
+    <!-- <header class="bg-secondary text-white py-2"> -->
+        <header class="py-2">
+        <h1 >Weather Dashboard</h1>
     </header>
-    <!-- main section -->
-    <main class="container" id="">
+
+
+    <!---container for page-->
+    <div class="container-fluid">
         <div class="row">
 
             <!-- search section -->
-            <div class="column1">
-                <div id="search">
-                    <h3>Search for a City:</h3>
-                    <form id="cityForm">
-                        <input class="cityInput" id="city" name="city" type="text" placeholder="Las Vegas">
-                        <button type="submit" id="submitButton" class="btn btn-info">Search</button>
-                    </form>
+            <div class="col-3 bg-light mt-3">
+                <h4 class="search-instruction my-1">Search for a city: </h4>
+                <form id="cityForm">
+                    <div class="input-group">
+                        <input id="cityInput" type="text" class="form-control" placeholder="Las Vegas"
+                            aria-label="Enter city name">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit" id="submitButton">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
 
-                    <hr>
-                    </hr>
-
-                    <!-- cities that have already been searched -->
-                    <div id="history"> </div>
+                <!-- cities that have been searched -->
+                <div id="history" class="mt-4">
                 </div>
-
-                <!-- weather display section -->
             </div>
 
-            <div class="column2">
-                <div id="showWeather">
-                    <!-- today -->
-                    <div id="currentWeather"></div>
-                    <!-- five day forecast -->
-                    <div id="fiveDay">
-                        <ul id="fiveDayList">
-                        </ul>
+            <!--- today's weather -->
+            <div class="col-9">
+                <div class="row">
+                    <div id="currentWeather">
                     </div>
                 </div>
+
+                <!--- 5-day forecast-->
+                <h3 id="fiveDayHeader" class="mt-1"></h3>
+                <div id="fiveDayForecast" class="row"></div>
             </div>
-
-
         </div>
+    </div>
 
-    </main>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"> </script>
+    <!-- javascript, jquery and moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
-    <script src="./assets/js/script.js"> </script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
