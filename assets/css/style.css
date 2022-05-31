@@ -1,9 +1,9 @@
 /* Variables */
-
-
-/* Universal Selector */
-* {}
-
+:root {
+    --pad: 5px;
+    --text1: center;
+    --text2: white;
+}
 
 /* Element Selector */
 body {
@@ -12,21 +12,49 @@ body {
 
 header {
     font-family: 'Playfair Display', serif;
-    text-align: center;
+    text-align: var(--text1);
     background-color: blueviolet;
-    color: white;
+    color: var(--text2);
+    padding: 10px;
 }
 
 /* Class Selectors */
 
+.searched-city:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
 
+/* current weather */
+.current {
+    border: solid pink 3px;
+    text-align: var(--text1);
+    margin: 18px;
+}
 
+.favorable {
+    background-color: green;
+    color: var(--text2);
+    padding: var(--pad);
+}
 
-/* ID Selectors */
+.moderate {
+    background-color: yellow;
+    color: black;
+    padding: var(--pad);
+}
 
+.severe {
+    background-color: red;
+    color: var(--text2);
+    padding: var(--pad);
+}
 
-/* Search Section */
+/* five day forecast cards */
+.cardBody {
 
+    background-color: #5DADE2;
+    color: var(--text2);
+    text-align: var(--text1);
+}
 
-
-/* Weather Display Section */
